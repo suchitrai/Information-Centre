@@ -10,7 +10,7 @@ public class LoginIT {
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver=new InternetExplorerDriver();
-		driver.get("http://localhost:8008/InformationCentre/Login.jsp");
+		driver.get("https://sjavaapp.azurewebsites.net/InformationCentre/Login.jsp");
 		Thread.sleep(2000);
 		driver.findElement(By.name("username")).sendKeys("admin");
 		driver.findElement(By.name("password")).sendKeys("admin");
