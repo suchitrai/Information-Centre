@@ -1,20 +1,9 @@
-
-
 import org.testing.annotations.Test;
-
 import org.openqa.selenium.By;
-
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
- 
-
- 
-
-public class LoginIT {
-
-               
+ public class LoginIT {               
 		public WebDriver driver;
 		public static String a;
 		public static String b;
@@ -28,28 +17,20 @@ public class LoginIT {
 		Thread.sleep(2000);
 		driver.findElement(By.id("click")).click();
 		a=driver.getTitle();
-		b=driver.findElement(By.id("name")).getText();
-			
+		b=driver.findElement(By.id("name")).getText();			
 		if (b.equalsIgnoreCase("Hello admin ,")) {
 		System.out.println("Login Test Passed");
 		}
 		else{
 		System.out.println("Login Test  Failed");
 		}
-
-
 		if (a.equalsIgnoreCase("CICD:Home page")) {
 		System.out.println("Home page Verified");
 		}
 		else{
 		System.out.println("Login Test Failed");
 		}
-
-
-}
-
- 
-
+} 
 }
 
 
